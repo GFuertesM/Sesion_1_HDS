@@ -53,3 +53,7 @@ Proyecto en Delphi para la gestión de plazas de parking en la Universidad de Za
 ## Documentación
 
 Para más información, consultar el archivo `/docs/proyecto_parking_unizar.md` que contiene la documentación completa del proyecto.
+
+## Autor
+
+Repositorio creado por el agente y por Gabriel Fuertes.
