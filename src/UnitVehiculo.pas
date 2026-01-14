@@ -69,7 +69,7 @@ end;
 function TVehiculo.GetDescripcion: string;
 begin
   Result := Format('%s %s', [FMarca, FModelo]);
-  if Result = ' ' then
+  if Trim(Result) = '' then
     Result := 'Vehículo sin descripción';
 end;
 

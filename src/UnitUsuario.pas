@@ -57,7 +57,7 @@ end;
 
 function TUsuario.GetNombreCompleto: string;
 begin
-  Result := FNombre + ' ' + FApellidos;
+  Result := Trim(FNombre + ' ' + FApellidos);
 end;
 
 function TUsuario.ToString: string;

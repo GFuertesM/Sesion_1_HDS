@@ -290,12 +290,14 @@ function TFormMain.BuscarRegistroActivo(const AMatricula: string): TRegistro;
 var
   i: Integer;
   Registro: TRegistro;
+  MatriculaUpper: string;
 begin
   Result := nil;
+  MatriculaUpper := UpperCase(AMatricula);
   for i := 0 to FRegistros.Count - 1 do
   begin
     Registro := TRegistro(FRegistros[i]);
-    if (UpperCase(Registro.Matricula) = UpperCase(AMatricula)) and 
+    if (UpperCase(Registro.Matricula) = MatriculaUpper) and 
        Registro.EstaActivo then
     begin
       Result := Registro;
